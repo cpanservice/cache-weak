@@ -3,6 +3,12 @@ use Module::Build;
 use strict;
 
 my $build = Module::Build->new(
+	meta_merge => {
+		resources => {
+			repository => 'http://github.com/esobchenko/cache-weak',
+		},
+	},
+
 	module_name => 'Cache::Weak',
 	license => 'perl',
 	requires => {
